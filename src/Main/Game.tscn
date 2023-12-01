@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bs3a7cesgg26y"]
+[gd_scene load_steps=6 format=3 uid="uid://bs3a7cesgg26y"]
 
 [ext_resource type="Script" path="res://src/Main/StateMachine/StateMachine.gd" id="1"]
 [ext_resource type="Script" path="res://src/Main/Label.gd" id="2_gtfcf"]
@@ -6,29 +6,44 @@
 [ext_resource type="Script" path="res://src/Main/Idle.gd" id="4_3osid"]
 [ext_resource type="Script" path="res://src/Main/Run.gd" id="5_y0i65"]
 
-[sub_resource type="FontFile" id="1"]
-fallbacks = Array[Font]([ExtResource("3")])
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
-
 [node name="Game" type="Node"]
 
 [node name="Label" type="Label" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -300.0
-offset_top = -103.0
-offset_right = 300.0
-offset_bottom = 103.0
-theme_override_fonts/font = SubResource("1")
+anchors_preset = -1
+anchor_left = 0.169
+anchor_top = 0.805
+anchor_right = 0.169
+anchor_bottom = 0.805
+offset_left = -161.24
+offset_top = -100.7
+offset_right = 161.76
+offset_bottom = 100.3
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 50
 text = "Text"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_gtfcf")
+
+[node name="Label2" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.172
+anchor_top = 0.192
+anchor_right = 0.172
+anchor_bottom = 0.192
+offset_left = -161.12
+offset_top = -100.68
+offset_right = 161.88
+offset_bottom = 100.32
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 50
+text = "Text"
+horizontal_alignment = 1
+vertical_alignment = 1
 script = ExtResource("2_gtfcf")
 
 [node name="StateMachine" type="Node" parent="."]
@@ -41,4 +56,5 @@ script = ExtResource("4_3osid")
 [node name="Run" type="Node" parent="StateMachine"]
 script = ExtResource("5_y0i65")
 
+[connection signal="transitioned" from="StateMachine" to="Label2" method="_on_state_machine_transitioned"]
 [connection signal="transitioned" from="StateMachine" to="Label" method="_on_state_machine_transitioned"]

@@ -12,16 +12,19 @@ config_version=5
 
 config/name="3D Third-Person Open Mannequin: State Machine"
 run/main_scene="res://src/Main/Game.tscn"
-config/features=PackedStringArray("4.1")
+config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
 
 [display]
 
-window/size/viewport_width=1920
-window/size/viewport_height=1080
-window/size/window_width_override=1280
-window/size/window_height_override=720
-window/stretch/mode="2d"
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/size/initial_position_type=0
+window/size/initial_screen=1
+window/size/window_width_override=960
+window/size/window_height_override=540
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
 
 [layer_names]
 
