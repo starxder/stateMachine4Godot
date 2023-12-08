@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701416683
-default_env.tres::Environment::8402019063470687533::1701416699::0::1::::<><>::
+::res://::1701999878
+default_env.tres::Environment::8402019063470687533::1701419059::0::1::::<><>::
 icon.png::CompressedTexture2D::8755125307084746619::1583867020::1701398572::1::::<><>::
 readme.md::TextFile::-1::1701324333::0::1::::<><>::
 ::res://assets/::1701324344
@@ -27,10 +27,10 @@ Montserrat-Bold.ttf::FontFile::4678864784241850857::1583867020::1701398572::1:::
 ::res://src/::1701324344
 ::res://src/Level/::1701324344
 Playground.tscn::PackedScene::-1::1701226588::0::1::::<><>::res://assets/3d/level/playground.glb<>res://assets/3d/materials/obstacle.tres
-::res://src/Main/::1701416684
-Game.tscn::PackedScene::3707679703748356082::1701416699::0::1::::<><>::res://src/Main/StateMachine/StateMachine.gd<>res://src/Main/Label.gd<>uid://b7wqhpvr243ll::::res://assets/fonts/Montserrat-Bold.ttf<>res://src/Main/Idle.gd<>res://src/Main/Run.gd
+::res://src/Main/::1701419059
+Game.tscn::PackedScene::3707679703748356082::1701419059::0::1::::<><>::res://src/Main/StateMachine/StateMachine.gd<>res://src/Main/Label.gd<>uid://b7wqhpvr243ll::::res://assets/fonts/Montserrat-Bold.ttf<>res://src/Main/Idle.gd<>res://src/Main/Run.gd
 Idle.gd::GDScript::-1::1701273884::0::1::::<>State<>::
-Label.gd::GDScript::-1::1701416699::0::1::::<>Label<>::
+Label.gd::GDScript::-1::1701419059::0::1::::<>Label<>::
 Run.gd::GDScript::-1::1701274376::0::1::::<>State<>::
 ::res://src/Main/StateMachine/::1701324344
 State.gd::GDScript::-1::1701249790::0::1::::State<>Node<>res://assets/2d/icons/state.svg::

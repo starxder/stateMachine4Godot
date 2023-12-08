@@ -1,12 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://bs3a7cesgg26y"]
+[gd_scene load_steps=7 format=3 uid="uid://bs3a7cesgg26y"]
 
 [ext_resource type="Script" path="res://src/Main/StateMachine/StateMachine.gd" id="1"]
+[ext_resource type="Script" path="res://src/Main/LabelGroup.gd" id="1_8urdh"]
 [ext_resource type="Script" path="res://src/Main/Label.gd" id="2_gtfcf"]
 [ext_resource type="FontFile" uid="uid://b7wqhpvr243ll" path="res://assets/fonts/Montserrat-Bold.ttf" id="3"]
 [ext_resource type="Script" path="res://src/Main/Idle.gd" id="4_3osid"]
 [ext_resource type="Script" path="res://src/Main/Run.gd" id="5_y0i65"]
 
 [node name="Game" type="Node"]
+
+[node name="LabelGroup" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_8urdh")
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = -1
@@ -56,5 +65,4 @@ script = ExtResource("4_3osid")
 [node name="Run" type="Node" parent="StateMachine"]
 script = ExtResource("5_y0i65")
 
-[connection signal="transitioned" from="StateMachine" to="Label2" method="_on_state_machine_transitioned"]
-[connection signal="transitioned" from="StateMachine" to="Label" method="_on_state_machine_transitioned"]
+[connection signal="transitioned" from="StateMachine" to="LabelGroup" method="_on_state_machine_transitioned"]

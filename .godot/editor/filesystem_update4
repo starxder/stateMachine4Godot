@@ -1,4 +1,5 @@
 res://default_env.tres
 res://src/Main/Game.tscn
 res://src/Main/Label.gd
-res://src/Main/Label2.gd
+res://src/Main/LabelGroup.gd
+res://src/Main/StateMachine/StateMachine.gd
