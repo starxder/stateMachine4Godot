@@ -1,3 +1,2 @@
-res://default_env.tres
-res://src/Main/Game.tscn
-res://src/Main/Label.gd
+res://world.tscn
+res://player.tscn
