@@ -1,2 +1,6 @@
 res://world.tscn
 res://player.tscn
+res://classes/states/Landing.gd
+res://player.gd
+res://world.gd
+res://classes/MainCamera.gd

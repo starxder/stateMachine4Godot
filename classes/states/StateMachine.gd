@@ -31,7 +31,7 @@ func _physics_process(delta: float) -> void:
 func setStateWithMsg(
 	target_state_path:String,
 	msg:={
-		lastState =	state
+		lastState = state
 	}
 	)-> void:
 	if not has_node(target_state_path):
