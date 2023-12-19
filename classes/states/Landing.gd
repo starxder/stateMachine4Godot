@@ -16,11 +16,11 @@ func enter(msg: Dictionary = {}) ->void:
 
 	print_rich(msg.lastState.maxFallSpeed)
 	if msg.lastState.maxFallSpeed >450:
-		rigidityTime = 0.3
+		player.shakeCamera(0.4)
 	#如果下落速度大于600，启用僵直时间
-	if msg.lastState.maxFallSpeed >600:
+	if msg.lastState.maxFallSpeed >800:
 		rigidityTime = 1.5
-		player.shakeCamera(1.0)
+		player.shakeCamera(0.8)
 
 	animation_player.get_animation("landing").loop_mode = Animation.LOOP_NONE
 	animation_player.play("landing")

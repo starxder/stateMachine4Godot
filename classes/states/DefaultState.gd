@@ -24,7 +24,8 @@ func tick_process(delta:float) ->void:
 func commonPhysics(delta:float) ->void:
 	var direction := Input.get_axis("move_left","move-right")
 	player.velocity.x = direction*player.RUN_SPEED
-	player.velocity.y += gravity * delta
+	if not player.is_on_floor():
+		player.velocity.y += gravity * delta
 	if not is_zero_approx(player.velocity.x):
 		sprite_2d.flip_h = player.velocity.x < 0
 	
